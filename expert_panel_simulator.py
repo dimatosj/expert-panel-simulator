@@ -277,8 +277,50 @@ Each expert should provide their analysis, insights, and recommendations from th
             )
 
         except Exception as e:
-            print(f"❌ Simulation error: {e}")
-            traceback.print_exc()
+            error_msg = str(e)
+
+            # Check for model-related errors
+            if "NotFoundError" in str(type(e)) or "404" in error_msg or "not_found_error" in error_msg:
+                print("\n❌ Model Configuration Error")
+                print("="*50)
+
+                # Determine which provider failed
+                if "anthropic" in error_msg.lower() or "claude" in error_msg.lower():
+                    model_name = self.config.get('ANTHROPIC_MODEL', 'unknown')
+                    print(f"\n⚠️  The Anthropic model '{model_name}' was not found.")
+                    print("\n📚 To fix this issue:")
+                    print("   1. Visit the Anthropic models documentation:")
+                    print("      https://docs.claude.com/en/docs/about-claude/models/overview")
+                    print("   2. Find a valid model name from the list")
+                    print("   3. Update the ANTHROPIC_MODEL in your .env file")
+                    print("\n💡 Common valid models:")
+                    print("   - claude-3-5-sonnet-20241022")
+                    print("   - claude-3-5-haiku-20241022")
+                    print("   - claude-3-opus-20240229")
+                    print("   - claude-3-haiku-20240307")
+                    print("   - claude-3-sonnet-20240229")
+                elif "openai" in error_msg.lower() or "gpt" in error_msg.lower():
+                    model_name = self.config.get('OPENAI_MODEL', 'unknown')
+                    print(f"\n⚠️  The OpenAI model '{model_name}' was not found.")
+                    print("\n📚 To fix this issue:")
+                    print("   1. Visit the OpenAI models documentation:")
+                    print("      https://platform.openai.com/docs/models")
+                    print("   2. Find a valid model name from the list")
+                    print("   3. Update the OPENAI_MODEL in your .env file")
+                    print("\n💡 Common valid models:")
+                    print("   - gpt-4o")
+                    print("   - gpt-4-turbo")
+                    print("   - gpt-3.5-turbo")
+                else:
+                    print(f"\n⚠️  Model not found: {error_msg}")
+                    print("\n📚 Please check your model configuration in the .env file")
+
+                print("\n" + "="*50)
+            else:
+                print(f"❌ Simulation error: {e}")
+                if self.config.get('LOG_LEVEL', 'INFO').upper() == 'DEBUG':
+                    traceback.print_exc()
+
             return {"error": str(e)}
 
     def _create_moderator(self, topic: str, rounds: List[str] = None) -> AssistantAgent:
@@ -559,7 +601,7 @@ Available domains: productivity, technology, business, academic, software_develo
         )
 
         if 'error' in result:
-            print(f"❌ Simulation failed: {result['error']}")
+            # Error already handled with helpful message in run_simulation
             return 1
 
         print(f"\n🎉 Session complete: {result['session_id']}")

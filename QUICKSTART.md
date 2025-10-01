@@ -49,7 +49,7 @@ python expert_panel_simulator.py --topic "AI-powered task manager" --domain tech
 🚀 Expert Panel Simulator initialized
 📁 Session: 20241120_143022
 💾 Output: outputs/session_20241120_143022
-👥 Created 5 experts: Sarah Chen, Marcus Thompson, Alex Rodriguez, Dr. Lisa Wang, Jordan Kim
+👥 Created 5 experts: UX Designer, Software Architect, DevOps Engineer, Security Specialist, Frontend Engineer
 🗣️ Starting expert discussion...
 
 ✅ Simulation complete!

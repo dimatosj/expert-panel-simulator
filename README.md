@@ -121,29 +121,29 @@ python expert_panel_simulator.py \
 ## 🎯 Available Expert Domains
 
 ### **Productivity** (`--domain productivity`)
-- **David Allen (GTD Expert)** - Getting Things Done methodology
-- **Tiago Forte (PARA Expert)** - Building a Second Brain, PARA method
-- **Cal Newport (Deep Work Expert)** - Deep Work and Digital Minimalism
-- **Francesco Cirillo (Pomodoro Expert)** - Pomodoro Technique
-- **Dr. Sarah Mitchell (ADHD Specialist)** - Executive function support
+- **GTD Specialist** - Task capture and context-based action
+- **Digital Organization Expert** - PARA method and progressive summarization
+- **Focus & Attention Expert** - Deep work and attention management
+- **Time-Boxing Coach** - Pomodoro and interval-based productivity
+- **Executive Function Specialist** - ADHD and executive function support
 
 ### **Technology** (`--domain technology`)
-- **Sarah Chen (UX Designer)** - User experience and interface design
-- **Marcus Thompson (Software Architect)** - System architecture and scalability
-- **Alex Rodriguez (DevOps Engineer)** - Infrastructure and operations
-- **Dr. Lisa Wang (Security Expert)** - Cybersecurity and privacy
-- **Jordan Kim (Frontend Expert)** - Frontend development and performance
+- **UX Designer** - User experience and interface design
+- **Software Architect** - System architecture and scalability
+- **DevOps Engineer** - Infrastructure and operations
+- **Security Specialist** - Cybersecurity and privacy
+- **Frontend Engineer** - Frontend development and performance
 
 ### **Business** (`--domain business`)
-- **Emily Johnson (Product Manager)** - Product strategy and market fit
-- **Mike Chen (Startup Advisor)** - Entrepreneurship and business development
-- **Anna Rodriguez (Growth Expert)** - Growth marketing and user acquisition
-- **Robert Kim (Finance Expert)** - Financial planning and business models
+- **Product Strategist** - Product planning and market fit
+- **Startup Mentor** - Entrepreneurship and lean validation
+- **Growth Specialist** - Marketing funnels and user acquisition
+- **Finance Advisor** - Business finance and sustainability
 
 ### **Academic** (`--domain academic`)
-- **Dr. Jennifer Adams (Psychology Researcher)** - Cognitive psychology and behavior
-- **Dr. Michael Brown (Education Expert)** - Learning sciences and ed-tech
-- **Dr. Priya Patel (Data Scientist)** - Data analysis and machine learning
+- **Cognitive Psychology Researcher** - Human cognition and behavior
+- **Learning Scientist** - Education and knowledge transfer
+- **Data Science Researcher** - Machine learning and statistical modeling
 
 ## 📊 Sample Configurations
 
@@ -212,10 +212,10 @@ outputs/
 Session: 20241120_143022
 Generated: 2024-11-20T14:32:45
 
-## Sarah Chen (14:32:45)
+## UX Designer (14:32:45)
 As a UX designer, I see significant potential in this concept. The key challenge will be balancing feature richness with interface simplicity...
 
-## Marcus Thompson (14:33:12)
+## Software Architect (14:33:12)
 From an architecture perspective, we need to consider scalability early. I'd recommend starting with a microservices approach...
 ```
 
