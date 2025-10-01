@@ -27,34 +27,34 @@ class ExpertTemplate:
 
 PRODUCTIVITY_EXPERTS = {
     'gtd_expert': ExpertTemplate(
-        name="David Allen (GTD Expert)",
-        expertise="Getting Things Done methodology",
-        perspective="Focuses on capture, clarification, and context-based action",
-        background="Creator of GTD system, emphasizes stress-free productivity through complete capture and trusted systems"
+        name="GTD Specialist",
+        expertise="Task capture and context-based action",
+        perspective="Focuses on clear workflows and reducing cognitive overload",
+        background="Productivity coach with a focus on trusted systems and stress-free task management"
     ),
     'para_expert': ExpertTemplate(
-        name="Tiago Forte (PARA Expert)",
-        expertise="Building a Second Brain and PARA method",
-        perspective="Focuses on actionability and creative output",
-        background="Digital organization expert, emphasizes projects over areas, progressive summarization"
+        name="Digital Organization Expert",
+        expertise="Organizing knowledge using PARA and progressive summarization",
+        perspective="Focuses on turning notes into actionable creative output",
+        background="Consultant specializing in digital workflows and structured personal knowledge management"
     ),
     'deep_work_expert': ExpertTemplate(
-        name="Cal Newport (Deep Work Expert)",
-        expertise="Deep Work and Digital Minimalism",
-        perspective="Advocates for focused work and minimal digital distraction",
-        background="Computer science professor, author on focused work and attention management"
+        name="Focus & Attention Expert",
+        expertise="Deep work and attention management",
+        perspective="Advocates for distraction-free concentration and deliberate practice",
+        background="Academic and writer focused on strategies for achieving high-value output through concentration"
     ),
     'pomodoro_expert': ExpertTemplate(
-        name="Francesco Cirillo (Pomodoro Expert)",
-        expertise="Pomodoro Technique and time boxing",
-        perspective="Emphasizes focused work intervals and sustainable pace",
-        background="Creator of Pomodoro Technique, focuses on time awareness and flow states"
+        name="Time-Boxing Coach",
+        expertise="Pomodoro and interval-based productivity methods",
+        perspective="Emphasizes rhythm, pacing, and sustainable energy levels",
+        background="Trainer who teaches time awareness, flow states, and structured work-rest cycles"
     ),
     'adhd_specialist': ExpertTemplate(
-        name="Dr. Sarah Mitchell (ADHD Specialist)",
-        expertise="ADHD and Executive Function support",
-        perspective="Considers working memory limitations and cognitive load",
-        background="Clinical psychologist specializing in executive function challenges and assistive technology"
+        name="Executive Function Specialist",
+        expertise="ADHD and executive function challenges",
+        perspective="Considers working memory, attention variability, and adaptive supports",
+        background="Clinical practitioner focusing on cognitive support strategies and assistive tools"
     )
 }
 
@@ -65,34 +65,34 @@ PRODUCTIVITY_EXPERTS = {
 
 TECH_EXPERTS = {
     'ux_designer': ExpertTemplate(
-        name="Sarah Chen (UX Designer)",
-        expertise="User Experience and Interface Design",
-        perspective="Focuses on user-centered design and accessibility",
-        background="Senior UX designer with 10+ years in product design, specializes in complex system usability"
+        name="UX Designer",
+        expertise="User experience and interface design",
+        perspective="Centers on usability, accessibility, and user empathy",
+        background="Designer with over a decade of experience in crafting intuitive digital products"
     ),
     'software_architect': ExpertTemplate(
-        name="Marcus Thompson (Software Architect)",
-        expertise="System Architecture and Scalability",
-        perspective="Emphasizes maintainable, scalable system design",
-        background="Principal architect at major tech company, expert in distributed systems and API design"
+        name="Software Architect",
+        expertise="System architecture and scalability",
+        perspective="Prioritizes long-term maintainability and performance",
+        background="Architect with experience in distributed systems and large-scale software design"
     ),
     'devops_engineer': ExpertTemplate(
-        name="Alex Rodriguez (DevOps Engineer)",
-        expertise="Infrastructure, Deployment, and Operations",
-        perspective="Focuses on reliability, monitoring, and automation",
-        background="Senior DevOps engineer, expert in cloud infrastructure and CI/CD pipelines"
+        name="DevOps Engineer",
+        expertise="Infrastructure, deployment, and automation",
+        perspective="Focuses on continuous delivery, monitoring, and resilience",
+        background="Engineer with extensive experience in cloud infrastructure and CI/CD pipelines"
     ),
     'security_expert': ExpertTemplate(
-        name="Dr. Lisa Wang (Security Expert)",
-        expertise="Cybersecurity and Privacy",
-        perspective="Prioritizes security, privacy, and risk management",
-        background="Security researcher and consultant, specializes in application security and threat modeling"
+        name="Security Specialist",
+        expertise="Cybersecurity and privacy",
+        perspective="Prioritizes safety, compliance, and risk management",
+        background="Researcher and consultant with expertise in threat modeling and secure application design"
     ),
     'frontend_expert': ExpertTemplate(
-        name="Jordan Kim (Frontend Expert)",
-        expertise="Frontend Development and Performance",
-        perspective="Focuses on user interface implementation and performance optimization",
-        background="Senior frontend engineer, expert in modern web technologies and performance optimization"
+        name="Frontend Engineer",
+        expertise="Frontend development and performance optimization",
+        perspective="Emphasizes fast, responsive interfaces and code efficiency",
+        background="Engineer skilled in modern web technologies and browser performance tuning"
     )
 }
 
@@ -103,28 +103,28 @@ TECH_EXPERTS = {
 
 BUSINESS_EXPERTS = {
     'product_manager': ExpertTemplate(
-        name="Emily Johnson (Product Manager)",
-        expertise="Product Strategy and Market Fit",
-        perspective="Balances user needs with business objectives",
-        background="Senior PM at successful startups, expert in product-market fit and user research"
+        name="Product Strategist",
+        expertise="Product planning and market fit",
+        perspective="Balances user needs with organizational goals",
+        background="Product manager experienced in user research and lifecycle strategy"
     ),
     'startup_advisor': ExpertTemplate(
-        name="Mike Chen (Startup Advisor)",
-        expertise="Entrepreneurship and Business Development",
-        perspective="Focuses on rapid iteration and market validation",
-        background="Serial entrepreneur and startup advisor, expert in lean startup methodology"
+        name="Startup Mentor",
+        expertise="Entrepreneurship and lean validation",
+        perspective="Focuses on rapid prototyping and iterative market testing",
+        background="Advisor with experience founding and guiding multiple early-stage ventures"
     ),
     'growth_expert': ExpertTemplate(
-        name="Anna Rodriguez (Growth Expert)",
-        expertise="Growth Marketing and User Acquisition",
-        perspective="Emphasizes scalable growth and user engagement",
-        background="Growth marketing leader, expert in data-driven growth strategies and user retention"
+        name="Growth Specialist",
+        expertise="Marketing funnels and user acquisition",
+        perspective="Prioritizes scalable growth and engagement strategies",
+        background="Growth professional skilled in data-driven marketing and retention campaigns"
     ),
     'finance_expert': ExpertTemplate(
-        name="Robert Kim (Finance Expert)",
-        expertise="Financial Planning and Business Models",
-        perspective="Analyzes financial viability and sustainability",
-        background="Former investment banker turned startup CFO, expert in financial modeling and fundraising"
+        name="Finance Advisor",
+        expertise="Business finance and sustainability",
+        perspective="Focuses on profitability, modeling, and long-term viability",
+        background="CFO-level advisor with experience in fundraising and operational finance"
     )
 }
 
@@ -135,22 +135,22 @@ BUSINESS_EXPERTS = {
 
 ACADEMIC_EXPERTS = {
     'psychology_researcher': ExpertTemplate(
-        name="Dr. Jennifer Adams (Psychology Researcher)",
-        expertise="Cognitive Psychology and Human Behavior",
-        perspective="Applies psychological principles to understand user behavior",
-        background="Professor of cognitive psychology, research focus on attention, memory, and decision-making"
+        name="Cognitive Psychology Researcher",
+        expertise="Human cognition and behavior",
+        perspective="Applies psychological insights to design and decision-making",
+        background="Academic researcher focusing on attention, learning, and memory processes"
     ),
     'education_expert': ExpertTemplate(
-        name="Dr. Michael Brown (Education Expert)",
-        expertise="Learning Sciences and Educational Technology",
-        perspective="Focuses on effective learning and knowledge transfer",
-        background="Education researcher, expert in learning sciences and educational technology design"
+        name="Learning Scientist",
+        expertise="Education and knowledge transfer",
+        perspective="Explores methods to improve how people learn and retain knowledge",
+        background="Researcher specializing in educational technology and learning methodologies"
     ),
     'data_scientist': ExpertTemplate(
-        name="Dr. Priya Patel (Data Scientist)",
-        expertise="Data Analysis and Machine Learning",
-        perspective="Emphasizes data-driven insights and predictive modeling",
-        background="PhD in Statistics, expert in machine learning applications and data analysis"
+        name="Data Science Researcher",
+        expertise="Machine learning and statistical modeling",
+        perspective="Applies quantitative methods to extract actionable insights",
+        background="PhD-level researcher experienced in predictive modeling and analytics"
     )
 }
 
@@ -167,10 +167,10 @@ EXPERT_SETS = {
     'software_development': {
         **{k: v for k, v in TECH_EXPERTS.items() if k in ['software_architect', 'devops_engineer', 'security_expert', 'frontend_expert']},
         'backend_expert': ExpertTemplate(
-            name="Carlos Mendez (Backend Expert)",
-            expertise="Backend Development and Database Design",
-            perspective="Focuses on scalable backend architecture and data management",
-            background="Senior backend engineer, expert in distributed systems and database optimization"
+            name="Backend Engineer",
+            expertise="Backend systems and database design",
+            perspective="Focuses on scalable data and server architecture",
+            background="Engineer skilled in distributed systems and database optimization"
         )
     },
     'product_design': {
@@ -178,10 +178,10 @@ EXPERT_SETS = {
         **{k: v for k, v in BUSINESS_EXPERTS.items() if k in ['product_manager']},
         **{k: v for k, v in ACADEMIC_EXPERTS.items() if k in ['psychology_researcher']},
         'design_researcher': ExpertTemplate(
-            name="Taylor Smith (Design Researcher)",
-            expertise="User Research and Design Strategy",
-            perspective="Emphasizes user-centered research and evidence-based design",
-            background="Design researcher with expertise in qualitative and quantitative user research methods"
+            name="Design Researcher",
+            expertise="User research and design validation",
+            perspective="Grounds design in user evidence and iterative testing",
+            background="Researcher with expertise in qualitative and quantitative design studies"
         )
     }
 }
